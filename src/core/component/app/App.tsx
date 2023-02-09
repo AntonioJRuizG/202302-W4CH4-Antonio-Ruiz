@@ -10,7 +10,11 @@ export function App() {
     <div className="container">
       <Info></Info>
       <main className="phone">
-        <Keyboard></Keyboard>
+        <div className="keyboard-container">
+          <ol className="keyboard">
+            <Keyboard></Keyboard>
+          </ol>
+        </div>
         <div className="actions">
           <Display></Display>
           <Actions></Actions>
