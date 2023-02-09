@@ -8,7 +8,6 @@ import { Keyboard } from "../../../features/keyboard/component/keyboard";
 export function App() {
   return (
     <div className="container">
-      {/* <!-- El siguiente elemento se oculta añadiéndole la clase "off" --> */}
       <Info></Info>
       <main className="phone">
         <Keyboard></Keyboard>
