@@ -1,8 +1,22 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
+import { Actions } from "../../../features/actions/component/actions";
 import { Display } from "../../../features/display/component/display";
+import { Info } from "../../../features/info/component/info";
+import { Keyboard } from "../../../features/keyboard/component/keyboard";
 
-function App() {
-  return <Display></Display>;
+export function App() {
+  return (
+    <div className="container">
+      {/* <!-- El siguiente elemento se oculta añadiéndole la clase "off" --> */}
+      <Info></Info>
+      <main className="phone">
+        <Keyboard></Keyboard>
+        <div className="actions">
+          <Display></Display>
+          <Actions></Actions>
+        </div>
+      </main>
+    </div>
+  );
 }
-
-export default App;
