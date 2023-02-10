@@ -13,9 +13,24 @@ export function usePhone() {
     setPhoneNumber(phoneNumber.slice(0, -1));
   };
 
+  /////
+  const [isCalling, setIsCalling] = useState(false);
+
+  const handleCall = () => {
+    setIsCalling(true);
+  };
+
+  const handleHang = () => {
+    setIsCalling(false);
+    setPhoneNumber("");
+  };
+
   return {
     phoneNumber,
     handlerClick,
     handlerClickDelete,
+    isCalling,
+    handleCall,
+    handleHang,
   };
 }
