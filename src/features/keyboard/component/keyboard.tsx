@@ -8,6 +8,7 @@ export function Keyboard() {
     <>
       <li>
         <button className="key" onClick={() => handlerClick("1")}>
+          {/* <button className="key" onClick={() => handlerClick("1")} disabled={handleCall}> */}
           1
         </button>
       </li>
